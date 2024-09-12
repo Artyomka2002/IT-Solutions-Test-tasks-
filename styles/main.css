@@ -163,3 +163,19 @@ body {
 .__card-bottomConteiner>button:hover {
     background-color: #eb1c24;
 }
+
+.containerCenter__button {
+    padding: 24px 98px ;
+    border-radius: 20px;
+    border:none;
+    background-color:#D90008;
+    color: #F8F8F8;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.__buttonCpntainer{
+    display: flex;
+    justify-content: center;
+   margin: 40px 0 0 80px;
+}
