@@ -14,7 +14,7 @@ class CardComponent {
         const img = document.createElement('img');
         img.src = this.carData.image;
         img.alt = 'Car';
-
+        img.style.width = '100%'
         const nameCar = document.createElement('div');
         nameCar.className = '__card-nameCar';
         nameCar.textContent = this.carData.name;
@@ -94,3 +94,33 @@ carData.map((item) => {
     const cardComponent = new CardComponent('app', item);
     cardComponent.render()
 })
+
+const otsivContainer = document.querySelector('.otsiv');
+let currentScrollPosition = 0;
+const scrollAmount = 520; // Дистанция прокрутки
+
+// Функция для прокрутки влево
+function scrollLeft() {
+    currentScrollPosition -= scrollAmount;
+    if (currentScrollPosition < 0) currentScrollPosition = 0; // Не позволяем выйти за границы
+    otsivContainer.scrollTo({
+        left: currentScrollPosition,
+        behavior: 'smooth'
+    });
+}
+
+// Функция для прокрутки вправо
+function scrollRight() {
+    currentScrollPosition += scrollAmount;
+    if (currentScrollPosition > otsivContainer.scrollWidth - otsivContainer.clientWidth) {
+        currentScrollPosition = otsivContainer.scrollWidth - otsivContainer.clientWidth;
+    }
+    otsivContainer.scrollTo({
+        left: currentScrollPosition,
+        behavior: 'smooth'
+    });
+}
+
+// Обработчики для кнопок пролистывания
+document.getElementById('pravo').addEventListener('click', scrollLeft);
+document.getElementById('levo').addEventListener('click', scrollRight);

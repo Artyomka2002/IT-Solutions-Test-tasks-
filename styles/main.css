@@ -19,19 +19,18 @@ body {
     padding: 0 70px;
 }
 
-.actionOne {
+.section_1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.topInfoContainer {
+.__topInfoContainer {
     background-color: #191919;
     margin-top: 30px;
     height: 663px;
     display: flex;
-    position: relative;
     width: 100%;
     border-radius: 40px;
     justify-content: center;
@@ -43,17 +42,16 @@ body {
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 182px solid transparent;
+    border-bottom: 180px solid transparent;
     border-right: 60vh solid #EB1C24;
     border-top: 20vh solid transparent;
-    right: 0;
-    bottom: 100px;
+    right: 91px;
 }
 
 .imgCar {
     position: absolute;
     right: -120px;
-    top: 50px;
+    top: -60px;
 }
 
 .__leftContent {
@@ -96,33 +94,42 @@ body {
     padding: 80px 0;
 }
 
-.visionButton {
+.__visionButton {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.visionButton>img {
+.__visionButton>img {
     margin-top: 4px;
 }
 
-.containerCenter__-left_info {
+.containerCenter-left_info {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.containerCenter__-left_info>span {
+.containerCenter-left_info>h2 {
+    font-weight: 800;
+}
+
+
+
+.containerCenter-left_info>span {
     color: #666666;
 
 }
 
 .conteiner_card {
-    display: flex;
+    align-items: start;
     justify-content: space-between;
     margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 18px;
+    width: auto;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    gap: 16px;
 }
 
 .__card-bottomConteiner {
@@ -165,17 +172,249 @@ body {
 }
 
 .containerCenter__button {
-    padding: 24px 98px ;
+    padding: 24px 98px;
     border-radius: 20px;
-    border:none;
-    background-color:#D90008;
+    border: none;
+    background-color: #D90008;
     color: #F8F8F8;
     font-weight: 700;
     cursor: pointer;
 }
 
-.__buttonCpntainer{
+.__buttonContainer {
     display: flex;
     justify-content: center;
-   margin: 40px 0 0 80px;
+    margin: 40px 0 0 80px;
 }
+
+.__containerCar {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sectionFrame {
+    display: flex;
+    gap: 20px;
+}
+
+.sectionFrame>div {
+    width: 50%;
+    color: aliceblue;
+    position: relative;
+}
+
+.sectionFrame>div>img {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.__containerFrameInfo {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    width: 300px;
+    height: 297px;
+    justify-content: space-around;
+}
+
+.__containerFrameInfo>button {
+    width: 190px;
+    cursor: pointer;
+    height: 41px;
+    border-radius: 12px;
+    border: none;
+    background: #FFFFFF4D;
+    color: unset;
+    font-weight: 700;
+}
+
+.__rightCont {
+    background-image: url('/img/sectionFrame/Frame\ 259.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.__leftCont {
+    background-image: url('/img/sectionFrame/Frame\ 19.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.frameButton:hover {
+    background-color: #FFFFFF80;
+}
+
+.about {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 75px;
+    background-image: url(/img/sectionFrame/image\ 28.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.__about-container {
+    display: flex;
+    padding: 40px 80px;
+    align-items: center;
+    color: #fff;
+    padding: 40px 40px 14px 40px;
+
+}
+
+.__about-container>div>h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.__about-container>div>p {
+    font-size: 18px;
+    text-align: -webkit-left;
+}
+
+._about-info {
+    width: 80%;
+    border-radius: 20px;
+    height: 150px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 40px 0px #0000001F;
+    margin-bottom: 40px;
+}
+
+._about-info>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 206px;
+}
+
+._about-info>div>img {
+    height: 40px;
+    width: 40px;
+}
+
+/* .containerOnasButton{
+    padding: 24px 98px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D90008;
+    color: #F8F8F8;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 200px;
+} */
+.wisp {
+    margin: 210px 0 40px;
+    padding: 0 40px;
+
+}
+
+
+.lkj {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.lkj>span {
+    font-size: 26px;
+    margin-top: 2px;
+    font-weight: 200;
+}
+
+.ocenka {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.__ocenka {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.otsiv {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.otsiv>div>div {
+    height: 200px;
+    min-width: 500px;
+    background: #F8F8F8;
+    transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 800;
+}
+
+.otsiv>div{
+ display: flex;
+ gap: 20px;
+}
+#pravo{
+    top: 200px;
+    left: 50px;
+    border-radius: 42px;
+    height: 100px;
+    width: 65px;
+    position: absolute;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 40px 0px #0000001F;
+}
+#levo{
+    top: 200px;
+    position: absolute;
+    right: 50px;
+    border-radius: 42px;
+    height: 100px;
+    rotate: 180deg;
+    width: 65px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 40px 0px #0000001F;
+}
+
+.itsivNew{
+    position: relative;
+}
+/* Добавим кнопки для пролистывания */
+/* .otsiv::before,
+.otsiv::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    cursor: pointer;
+} */
