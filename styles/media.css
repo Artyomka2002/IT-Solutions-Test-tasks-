@@ -1,0 +1,56 @@
+@media (max-width:1590px) {
+    .imgCar {
+        top: 55px;
+        width: 800px;
+    }
+    .header__navigation {
+        gap: 22px;
+    }
+}
+
+@media (max-width:1320px) {
+    .imgCar {
+        position: static;
+        width: 100%;
+    }
+
+    .__topInfoContainer::before {
+        display: none;
+    }
+
+    .__leftContent>h1 {
+        font-size: 32px;
+    }
+
+    .__leftContent {
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 0 44px;
+        justify-content: center;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .__leftContent>p {
+        font-size: 15px;
+    }
+
+    .__topInfoContainer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .__leftContent>button {
+        width: 225px;
+    }
+}
+
+@media (max-width:1320px) {
+    .sectionFrame {
+        flex-direction: column;
+    }
+    .sectionFrame>div {
+        width: 100%;
+    }
+}

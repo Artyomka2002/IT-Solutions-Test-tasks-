@@ -37,7 +37,7 @@ body {
     flex-direction: column;
 }
 
-.topInfoContainer::before {
+.__topInfoContainer::before {
     content: '';
     position: absolute;
     width: 0;
@@ -45,13 +45,14 @@ body {
     border-bottom: 180px solid transparent;
     border-right: 60vh solid #EB1C24;
     border-top: 20vh solid transparent;
-    right: 91px;
+    right: 70px;
 }
 
 .imgCar {
     position: absolute;
     right: -120px;
     top: -60px;
+    width: 1140px;
 }
 
 .__leftContent {
@@ -263,16 +264,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backdrop-filter: invert(1);
     flex-direction: column;
     align-items: center;
 }
 
 .__about-container {
     display: flex;
-    padding: 40px 80px;
     align-items: center;
+    gap: 100px;
     color: #fff;
     padding: 40px 40px 14px 40px;
+    word-break: break-word;
 
 }
 
@@ -322,7 +325,7 @@ body {
     cursor: pointer;
     margin-top: 200px;
 } */
-.wisp {
+.Reviews {
     margin: 210px 0 40px;
     padding: 0 40px;
 
@@ -373,11 +376,12 @@ body {
     font-weight: 800;
 }
 
-.otsiv>div{
- display: flex;
- gap: 20px;
+.otsiv>div {
+    display: flex;
+    gap: 20px;
 }
-#pravo{
+
+#pravo {
     top: 200px;
     left: 50px;
     border-radius: 42px;
@@ -388,7 +392,8 @@ body {
     border: none;
     box-shadow: 0px 4px 40px 0px #0000001F;
 }
-#levo{
+
+#levo {
     top: 200px;
     position: absolute;
     right: 50px;
@@ -401,9 +406,10 @@ body {
     box-shadow: 0px 4px 40px 0px #0000001F;
 }
 
-.itsivNew{
+.Slider {
     position: relative;
 }
+
 /* Добавим кнопки для пролистывания */
 /* .otsiv::before,
 .otsiv::after {
@@ -418,3 +424,167 @@ body {
     transform: translateY(-50%);
     cursor: pointer;
 } */
+
+._form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 60px 0;
+    justify-content: space-between;
+}
+
+.container_form{
+    display: flex;
+    justify-content: center;
+    background: #191919;
+    color: #fff;
+    border-radius: 40px;
+    gap: 30px;
+    height: 512px;
+    margin-top: 140px;
+    padding: 60px 60px 0 60px;
+    margin-bottom: 140px;
+    justify-content: space-between;
+}
+
+.conteinerInfoBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.conteinerInfoBottom>div {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.conteinerInfoBottom>div>div {
+    display: flex;
+    gap: 12px;
+}
+
+._conteinerInfoBottom>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #191919;
+    padding: 40px 40px 0 40px;
+}
+
+.contForm {
+    width: 630px;
+    border-radius: 20px;
+}
+
+.contactsInfo>h2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: #F3F3F3;
+}
+
+.contactsInfo>p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    margin-top: 20px;
+}
+
+.mailTelInfo {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+}
+
+.bottominfoMail {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sortedALign>div {
+    align-items: center;
+    gap: 60px;
+}
+
+.containerInput{
+    display: flex;
+    gap: 6px;
+}
+
+.containerInput > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+textarea{
+    padding: 16px;
+    border-radius: 16px;
+    background: #F8F8F8;
+    font-size: 16px;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+}
+input:hover {
+    background: #EBEBEB;
+}
+
+.input_Field{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 38px;
+}
+.input_Field > textarea{
+   height: 100px;
+   resize: none;
+   padding: 14px 20px 72px;
+}
+.contentsContainerInputs{
+    display: flex;
+    word-wrap: break-word;
+    margin-top: 44px;
+}
+
+.contentsContainerInputs > div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contentsContainerInputs > div > input{
+    border: 1px solid #C4C4C4;
+    height: 28px;
+    width: 28px;
+    border-radius: 8px;
+    margin-top: -8px;
+}
+
+.contentsContainerInputs  > p{
+    text-align: left;
+
+}
+
+.contButton{
+    width: 33%;
+}
+.contButton >button {
+    padding: 24px 32px;
+    border-radius: 16px;
+    height: 70px;
+    border: none;
+    font-size: 18px;
+    color: #757575;
+    font-weight: 700;
+}
+/* background:  */
