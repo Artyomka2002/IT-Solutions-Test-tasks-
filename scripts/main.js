@@ -7,7 +7,7 @@ class CardComponent {
     }
 
     render() {
-        // Создаем элементы
+       
         const card = document.createElement('div');
         card.className = 'card';
 
@@ -32,7 +32,7 @@ class CardComponent {
         const button = document.createElement('button');
         button.textContent = 'Оставить заявку';
 
-        // Собираем структуру
+    
         bottomContainer.appendChild(price);
         bottomContainer.appendChild(button);
         card.appendChild(img);
@@ -40,12 +40,12 @@ class CardComponent {
         card.appendChild(specifications);
         card.appendChild(bottomContainer);
 
-        // Добавляем карточку в контейнер
+       
         this.container.appendChild(card);
     }
 }
 
-// Пример данных для машины
+
 const carData = [{
     image: './img/card/subaruLEVORG.png',
     name: 'Subaru LEVORG VN5',
@@ -89,7 +89,7 @@ const carData = [{
     price: '2 366 200 ₽'
 },]
 
-// Создаем и рендерим компонент
+
 carData.map((item) => {
     const cardComponent = new CardComponent('app', item);
     cardComponent.render()
@@ -97,19 +97,19 @@ carData.map((item) => {
 
 const otsivContainer = document.querySelector('.otsiv');
 let currentScrollPosition = 0;
-const scrollAmount = 520; // Дистанция прокрутки
+const scrollAmount = 520;
 
-// Функция для прокрутки влево
+
 function scrollLeft() {
     currentScrollPosition -= scrollAmount;
-    if (currentScrollPosition < 0) currentScrollPosition = 0; // Не позволяем выйти за границы
+    if (currentScrollPosition < 0) currentScrollPosition = 0;
     otsivContainer.scrollTo({
         left: currentScrollPosition,
         behavior: 'smooth'
     });
 }
 
-// Функция для прокрутки вправо
+
 function scrollRight() {
     currentScrollPosition += scrollAmount;
     if (currentScrollPosition > otsivContainer.scrollWidth - otsivContainer.clientWidth) {
@@ -121,6 +121,6 @@ function scrollRight() {
     });
 }
 
-// Обработчики для кнопок пролистывания
+
 document.getElementById('pravo').addEventListener('click', scrollLeft);
 document.getElementById('levo').addEventListener('click', scrollRight);
