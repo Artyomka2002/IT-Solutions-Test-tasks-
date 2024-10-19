@@ -235,7 +235,7 @@ body {
 }
 
 .__rightCont {
-    background-image: url('/img/sectionFrame/Frame\ 259.png');
+    background-image: url('./img/sectionFrame/Frame\ 259.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,7 +243,7 @@ body {
 }
 
 .__leftCont {
-    background-image: url('/img/sectionFrame/Frame\ 19.png');
+    background-image: url('./img/sectionFrame/Frame\ 19.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -260,7 +260,7 @@ body {
     display: flex;
     border-radius: 20px;
     margin-top: 75px;
-    background-image: url(/img/sectionFrame/image\ 28.png);
+    background-image: url('./img/sectionFrame/image\ 28.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
