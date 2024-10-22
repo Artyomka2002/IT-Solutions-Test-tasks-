@@ -235,7 +235,7 @@ body {
 }
 
 .__rightCont {
-    background-image: url('./img/sectionFrame/Frame\ 259.png');
+    background-image: url('/img/sectionFrame/Frame\ 259.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,7 +243,7 @@ body {
 }
 
 .__leftCont {
-    background-image: url('./img/sectionFrame/Frame\ 19.png');
+    background-image: url('/img/sectionFrame/Frame\ 19.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -586,5 +586,13 @@ input:hover {
     font-size: 18px;
     color: #757575;
     font-weight: 700;
+}
+.footer{
+height: 200px;
+background-color: #191919;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #666666 ;
 }
 /* background:  */
